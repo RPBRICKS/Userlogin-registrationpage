@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.page {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid #e2e2e2;
+    border-radius: 10px;
+    box-shadow: 0 12px 32px rgba(0, 1, 0, 0.1);
+    background-color: #fff;
+}
+
+.cover h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.input-group label {
+    margin-right: 10px;
+    font-size: 14px;
+    color: #666;
+    flex-basis: 30%;
+    text-align: right;
+}
+
+.input-group input {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #007BFF;
+}
+p{
+    color: #5e5e5e;
+    margin-top: 15px;
+    cursor: pointer;
+}
+p:hover{
+    color: #007BFF;
+    transition: 0.6s;
+    scale: 1.077;
+}
+
+.login-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #0056b3;
+}
+
+.login-btn.disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.login-btn.disabled:hover {
+    background-color: #ccc;
+}
+#submit{
+    width: 100px;
+    height: 50px;
+}
+
+.logout-btn{
+    width: 7%;
+    height: 3em;
+    margin-top: 8px;
+    margin-right: 8px;
+    background-color: #007BFF;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    transform: 0.5s;
+    cursor: pointer;
+    border-radius: 0.25em;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 0.25px;
+}
+.logout-btn:hover{
+    transform: scale(1.077);
+    transition: 0.5s;
+    background-color: #0056b3;
+}
+
+
+
+.text {
+    position: relative;
+    bottom: -2em;
+}
+
+.hide {display: none;}
+
+.login-popup{
+    position: absolute;
+    height: 30em;
+    width: 30em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.25em;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    transform: scale(1);
+    transform: 1.5s;
+}
+.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
